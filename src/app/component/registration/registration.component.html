@@ -1,0 +1,21 @@
+
+<div>
+<form [formGroup]="registerForm">
+  <mat-form-field>
+    <input formControlName="firstName" matInput placeholder='First Name'>
+  </mat-form-field>
+  <mat-form-field>
+    <input type="text" formControlName="lastName" matInput placeholder="Last Name"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input type="email" matInput placeholder="Email" formControlName="email" />
+  </mat-form-field>
+  <mat-form-field>
+    <input type="password" matInput formControlName="password" placeholder="Password"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input type="password" matInput formControlName="confirmPassword" placeholder="Confirm Password"/>
+  </mat-form-field>
+  <button (click)="onRegister()">Register</button>
+</form>
+</div>
